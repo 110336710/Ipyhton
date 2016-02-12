@@ -1,0 +1,130 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Miniprojecten Data Science 2016\n",
+    "\n",
+    "* Veel van de mini-projecten kunnen ook uitgroeien tot een scriptie.\n",
+    "* Als je zelf een idee hebt voor een scriptie, en er al in een mini-project in je groepje mee wilt beginnen kan dat vaak ook. Het moet dan wel om _pretty big_ data gaan natuurlijk ;-)\n",
+    "\n",
+    "Aan elk project kunnen minstens 2 groepjes werken."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## BESCHRIJVING BESTANDEN OPBRENGSTENOVERZICHTEN VO 2015\n",
+    "\n",
+    "Inleiding\n",
+    "Jaarlijks produceert de Inspectie van het Onderwijs opbrengstenoverzichten voor de vestigingen in het Voortgezet Onderwijs. De overzichten zijn te vinden op www.onderwijsinspectie.nl, via de volgende handelingen: klik op schoolwijzer, kies voor sector voortgezet onderwijs, vul (deel van) de schoolnaam en/of plaatsnaam in, klik op start zoeken, klik op de één van de gepresenteerde vestigingen en klik op één van de gepresenteerde onderwijssoorten. Klik vervolgens op Opbrengstenoordeel. De beoordeling van de opbrengsten, waar nodig aangevuld met actuele gegevens, is een belangrijke stap in het toezichtproces dat leidt tot de bepaling van het toezichtarrangement op de school. Regelmatig ontvangt de Inspectie van het Onderwijs verzoeken voor het leveren van de gegevens op deze overzichten of van onderliggende databestanden. Om aan deze verzoeken tegemoet te komen stelt de Inspectie van het Onderwijs de gegevens beschikbaar via www.dans.knaw.nl. Het gaat daarbij om de integrale bestanden en dus niet de gegevens van een steekproef.\n",
+    "\n",
+    "Dit document bevat voor elk van de bestanden een korte omschrijving van de inhoud, gevolgd door tabellen met de naam, omschrijving en het format van de variabelen uit het bestand. In deze tabellen zijn de sleutelvelden, die de records met data uniek identificeren, met een grijze achtergrond zichtbaar gemaakt. Indien relevant zijn ook tabellen opgenomen met de waarden en omschrijvingen van de variabelen. Alle bestanden zijn in SPSS formaat, met uitgang ‘.sav’, beschikbaar. In deze bestanden zijn alle variabelen voorzien van labels en indien relevant zijn ook de waarden voorzien van value labels."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Gender issues in wetenschappelijke publicaties.\n",
+    "We gaan verder dan dit recente Nature artikel  <http://www.nature.com/news/bibliometrics-global-gender-disparities-in-science-1.14321> door ons te focussen op 1 wetenschapsgebied: de informatiewetenschappen. De DBLP database heeft prima informatie, heel makkelijk beschikbaar. We gaan kijken naar \"soort-zoekt-soort\" (publiceren vrouwen vaker samen met vrouwen), naar de plek in de auteurslijst die vrouwen krijgen, naar de affiliaties, hoe de (on)gelijkheid zich over de tijd ontwikkelde, en we zoomen in op een aantal vakgebieden (bijv, HCM, robots, databases). \n",
+    "\n",
+    "**Doel:** publicatie in Communications of the ACM. \n",
+    "\n",
+    "**Lastig/uitdaging:** We weten niet wie vrouw is en wie man. We hebben alleen de namen, en vaak ook wel een URL van een homepage. Met de voornamen kon ik effe snel  van zo'n 30% met grote zekerheid het geslacht vaststellen. Dat moet wel wat omhoog.... (en dat kan ook zeker)."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Cito Toets\n",
+    "\n",
+    "Zie <http://www.rtlnieuws.nl/nieuws/binnenland/hoe-vergelijkt-rtl-nieuws-de-cito-scores-van-2014>\n",
+    "We hebben de data van vorig jaar. Allicht kunnen we die van dit jaar ook vinden. Het is een goudmijn."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "##  **Tekst analyse op 200 jaar troonredes** \n",
+    "\n",
+    "Het artikel <http://www.pnas.org/content/112/35/10837> doet een uitgebreid onderzoek naar de verandering van de wereld op basis van alle (zo'n 200 jaar) _State of the Union_'s. Dit zijn de Amerikaanse equivalenten van onze troonredes. We hebben alle Nederlandse  troonredes vanaf 1818 in net tekst formaat lokaal staan. Op het troonrede corpus kunnen we vergelijkbare analyses uitvoeren als gedaan op het State of the Union corpus. \n",
+    "\n",
+    "Veel van het onderzoek in het artikel is gebaseerd op   co-occurence (samen in een paragraaf) netwerken   van zelfstandige naamwoorden en belangrijke _multi-word_ frases. Het stuk <http://www.pnas.org/content/112/35/10837> zelf is erg duidelijk en het Supplementary Material (SI) geeft heel precieze informatie over hun aanpak. Het onderzoek is dus prima na te bootsen. \n",
+    "\n",
+    "De 200 jaar troonredes zijn beschikbaar in prima HTML formaat."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## **Classificeer artikelen in de krant** \n",
+    "\n",
+    "De Koninklijke Bibliotheek heeft ruim 8 miljoen artikelen uit kranten tot 1995 digitaal beschikbaar op  <http://www.delpher.nl/>. Wij hebben ook een lokale copie. In dit onderzoek maak je een classifier die artikelen kan rubiceren. Soorten waaran je kan denken zijn: recensie, hoofdredactioneel commentaar, column. We kunnen ook met moderner materiaal werken via LexisNexis. \n",
+    "\t* We hebben geen trainingsmateriaal, dus je zal per soort eerst met wat heuristieken een training en testset moeten maken, en op basis daarvan een classifier trainen. \n",
+    "\t* We hebben goed contact met de KB. Als je classifier goed scoort is de kans groot dat hij in <http://www.delpher.nl/> (of in ieder geval in de \"lab versie\"\" ervan op de KB) wordt ingevoerd."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## UK female elections\n",
+    "\n",
+    "Vorig jaar hebben 2 Bsc 3de jaars meiden een begin gemaakt met een prachtig \"what if\" onderzoek naar de mogelijkheid om een volledig door vrouwen gedomineerd parlement in de UK te krijgen. \n",
+    "\n",
+    "We hebben data van vorige verkiezingen, van peilingen, van alle constituencies. En er zijn al een hoop notebooks beschikbaar waar je op verder kunt bouwen. "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## WOB subsidies\n",
+    "\n",
+    "Iemand heeft een hele boele WOB verzoeken gedaan en die vanuit een PDF bestand naar een Excel lijst overgezet. \n",
+    "\n",
+    "Het gaat om subsidiebedragen per bedrijf/instelling.\n",
+    "\n",
+    "Zie <http://www.krekr.nl/content/subsidies-2010-in-excel-sheet/>\n",
+    "\n",
+    "Het PDF en excel bestand is ook opgehaald."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 2",
+   "language": "python",
+   "name": "python2"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 2
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython2",
+   "version": "2.7.10"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 0
+}
