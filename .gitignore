@@ -45,3 +45,7 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+*.ipynb
+
+.ipynb_checkpoints/Assignment2-checkpoint.ipynb
